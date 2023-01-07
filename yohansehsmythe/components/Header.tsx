@@ -20,7 +20,7 @@ function Header() {
         <div>
           <Link 
             href="https://moonboiuniverse.com"
-            className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#F7AB0A] flex items-center rounded-full"
+            className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#FF0000] flex items-center rounded-full"
           >
             Sign up for Moon Boi Universe BETA
           </Link>

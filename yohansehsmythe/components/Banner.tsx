@@ -5,7 +5,7 @@ function Banner() {
             <h1 className="text-7xl">Yohanseh Smythe</h1>
             <h2 className="mt-5 md:mt-0">
                 If You're Interested In{" "}
-                <span className="underline decoration-4 decoration-[#F7AB0A]">
+                <span className="underline decoration-4 decoration-[#FF0000]">
                     CRYPTO, REAL ESTATE & ENTREPRENEURSHIP
                 </span>{" "}
                 This Is The Place For You
