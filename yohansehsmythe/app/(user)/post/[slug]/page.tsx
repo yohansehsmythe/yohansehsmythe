@@ -4,6 +4,8 @@ import Image from "next/image";
 import urlFor from "../../../../lib/urlFor";
 import React from "react";
 import category from "../../../../schemas/category";
+import { PortableText } from "@portabletext/react";
+import { RichTextComponents } from "../../../../components/RichTextComponents";
 
 type Props = {
     params: {
@@ -25,7 +27,7 @@ async function Post({params: {slug}}: Props) {
 
     return (
         <article className="px-10 pb-28">
-            <section className="space-y-2 border border-[#FF0000] text-black">
+            <section className="space-y-2 border border-[black] text-black">
                 <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
                     <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
                         <Image
@@ -47,7 +49,7 @@ async function Post({params: {slug}}: Props) {
                                     })}
                                 </p>
                             </div>
-                            <div className="flex items-center spacee-x-2 p-1">
+                            <div className="flex items-center spacee-x-2">
                                 <img 
                                     className="rounded-full"
                                     src={urlFor(post.author.image).url()}
@@ -56,12 +58,13 @@ async function Post({params: {slug}}: Props) {
                                     width={40}
                                 />
                                 <div className="w-64">
-                                    <h3 className="text-lg font-bold">{post.author.name}</h3>
+                                    <h3 className="text-lg font-bold p-2">{post.author.name}</h3>
                                     <div>{/*TODO Author BIO*/}</div>
                                 </div>
                             </div>
-                            <div>
-                                <h2 className="italic pt-10">{post.description}</h2>
+                        </div>
+                        <div>
+                            <h2 className="italic pt-10">{post.description}</h2>
                                 <div className="flex items-center justify-end mt-auto space-x-2">
                                     {post.categories.map ((category) => (
                                         <div>
@@ -70,10 +73,11 @@ async function Post({params: {slug}}: Props) {
                                     ))}
                                 </div>
                             </div>
-                        </div>
                     </section>
                 </div>
             </section>
+
+            <PortableText value={post.body} components={RichTextComponents}/>
         </article>
     );
 }

@@ -3,10 +3,14 @@ import { buildLegacyTheme } from "sanity";
 const props = {
     "--my-white": "#fff",
     "--my-black": "#1a1a1a",
-    "--my-smythe-brand": "#FF0000",
+    "--my-smythe-brand": "#FF000",
     "--my-red": "#db4437",
     "--my-yellow": "#f4b400",
     "--my-green": "#0f9d58",
+};
+
+const gradient = {
+    background: "linear-gradient(to bottom, #FFFFFF, #FF000)"
 };
 
 export const myTheme = buildLegacyTheme({
