@@ -37,7 +37,7 @@ async function Post({params: {slug}}: Props) {
                             fill
                         />
                     </div>
-                    <section className="p-5 bg-[#FF0000] w-full">
+                    <section className="p-5 bg-red-500 w-full">
                         <div className="flex flex-col md:flex-row justify-between gap-y-5">
                             <div>
                                 <h1 className="text-4xl font-extrabold">{post.title}</h1>

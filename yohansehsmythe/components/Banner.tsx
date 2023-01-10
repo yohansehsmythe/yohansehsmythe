@@ -12,7 +12,7 @@ function Banner() {
             </h2>
         </div>
         <p className="mt-5 md:mt-2 text-gray-400 max-w-sm">
-            Dubai Realter | Crypto Investor | Developer
+            Real Estate | Crypto | Tech
         </p>
     </div>
   )

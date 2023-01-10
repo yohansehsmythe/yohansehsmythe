@@ -40,7 +40,7 @@ export const RichTextComponents = {
         ),
         
         blockquote: ({ children }: any) => (
-            <blockquote className="border-l-[black] border-l-4 pl-5 py-5 my-5">{children}</blockquote>
+            <blockquote className="border-black border-l-4 pl-5 py-5 my-5">{children}</blockquote>
         ), 
     },
     marks: {
